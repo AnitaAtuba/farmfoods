@@ -1,0 +1,25 @@
+<?php 
+session_start();
+require_once"adminguard.php";
+require_once"classes/Admin.php";
+
+$admin = new Admin;
+
+$id = isset($_GET['id'])? $_GET['id'] :0;
+// echo "<pre>";
+// print_r($id);
+// echo "</pre>";
+// die();
+
+if($id == 0){
+    $_SESSION['adminerror'] ="Product not found";
+    header("location:adminproducts.php");
+    exit;
+}else{
+    $response = $admin->delete_product($id);
+    $_SESSION['adminsuccess'] ="Product successfully deleted";
+    header("location:adminproduct.php");
+    exit;
+}
+
+?>
