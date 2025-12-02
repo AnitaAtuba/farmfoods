@@ -2,7 +2,7 @@
 <?php 
 session_start();
 require_once"userguard.php";
-require_once"classes/buyer.php";
+require_once"classes/Buyer.php";
 $buyer = new Buyer;
 $deets = $buyer->fetch_buyer_details($_SESSION['buyeronline']);
 $products = $buyer->fetch_all_product();

@@ -7,7 +7,7 @@
 	$farmeronline = isset($_SESSION['farmeronline'])? $_SESSION['farmeronline']:"";
 
 	$deets = $farmer->fetch_farmer_details($farmeronline);
-	require_once"Partials/header.php";
+	require_once"partials/header.php";
 
 	$products =$farmer->fetch_some_product();
 	$farmers= $farmer->fetch_farmers();

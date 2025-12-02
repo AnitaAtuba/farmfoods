@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-   require_once"Partials/header.php";
+   require_once"partials/header.php";
 ?>
   
     <div class="container-fluid bg-white">

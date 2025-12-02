@@ -1,7 +1,7 @@
 <?php 
 session_start();
 require_once"userguard.php";
-require_once"classes/buyer.php";
+require_once"classes/Buyer.php";
 $buyer = new Buyer;
 $deets = $buyer->fetch_buyer_details($_SESSION['buyeronline']);
 $cart = $buyer->get_my_cart($_SESSION['buyeronline']);
