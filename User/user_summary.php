@@ -2,7 +2,7 @@
 <?php 
 session_start();
 require_once"userguard.php";
-require_once"classes/buyer.php";
+require_once"Classes/buyer.php";
 $buyer = new Buyer;
 $deets = $buyer->fetch_buyer_details($_SESSION['buyeronline']);
 $products = $buyer->my_transactions($_SESSION['buyeronline']);
@@ -13,8 +13,8 @@ $products = $buyer->my_transactions($_SESSION['buyeronline']);
 // print_r($products);
 // echo"</pre>";
 
-require_once"partials/header.php";
-require_once"partials/dash.php";
+require_once"Partials/header.php";
+require_once"Partials/dash.php";
 
 
 ?>
@@ -79,5 +79,5 @@ require_once"partials/dash.php";
 
     
     <?php 
-    require_once "partials/footer.php";
+    require_once "Partials/footer.php";
     ?>

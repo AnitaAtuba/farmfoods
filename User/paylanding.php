@@ -1,8 +1,8 @@
 <?php 
 session_start();
 require_once"userguard.php";
-require_once"classes/Buyer.php";
-require_once"classes/Paystack.php";
+require_once"Classes/Buyer.php";
+require_once"Classes/Paystack.php";
 
 $buyer = new Buyer;
 $pay = new Paystack;

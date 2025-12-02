@@ -1,14 +1,14 @@
 <?php 
 session_start();
-require_once"classes/Farmer.php";
+require_once"Classes/Farmer.php";
 
 
 	$farmer= new Farmer;
 	$deets = $farmer->fetch_farmer_details($_SESSION['farmeronline']);
 
 
-require_once"partials/header.php";
-require_once"partials/dash.php";
+require_once"Partials/header.php";
+require_once"Partials/dash.php";
 
 ?>
 
@@ -43,5 +43,5 @@ require_once"partials/dash.php";
 	</div>	
 	</body>			
 <?php 
-		require_once "partials/footer.php";
+		require_once "Partials/footer.php";
 ?>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-   require_once"partials/header.php";
+   require_once"Partials/header.php";
 ?>
   
     <div class="container-fluid bg-white">
@@ -110,4 +110,4 @@ session_start();
     
 															
   </div>
-<?php require_once"partials/footer.php";?>
+<?php require_once"Partials/footer.php";?>

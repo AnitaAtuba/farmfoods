@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require_once"classes/Farmer.php";
+require_once"Classes/Farmer.php";
 $farmer = new Farmer;
 $farmer->logout_farmer();
 // echo"hello";

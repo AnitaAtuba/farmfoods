@@ -2,7 +2,7 @@
 <?php 
 session_start();
 require_once"userguard.php";
-require_once"classes/Buyer.php";
+require_once"Classes/Buyer.php";
 
 $buyer = new Buyer;
 $deets = $buyer->fetch_buyer_details($_SESSION['buyeronline']);
@@ -42,8 +42,8 @@ if (!empty($search)) {
 // print_r($cate);
 // echo"</pre>";
 
-require_once"partials/header.php";
-require_once"partials/dash_carty.php";
+require_once"Partials/header.php";
+require_once"Partials/dash_carty.php";
 
 
 ?>
@@ -99,7 +99,7 @@ require_once"partials/dash_carty.php";
 					<div class="col">
 						<div id="searchbody" class="row mb-3">
 							<?php foreach ($products as $product) { ?>
-								<?php require_once "partials/product_cards.php"; ?>
+								<?php require_once "Partials/product_cards.php"; ?>
 							<?php } ?>
 						</div>
 					</div>
@@ -171,4 +171,4 @@ require_once"partials/dash_carty.php";
 
 	});
 </script>
-<?php require_once"partials/footer.php";?>
+<?php require_once"Partials/footer.php";?>

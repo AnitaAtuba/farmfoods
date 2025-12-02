@@ -3,7 +3,7 @@
 session_start();
 require_once"userguard.php";
 
-require_once"classes/Farmer.php";
+require_once"Classes/Farmer.php";
 $farmer = new Farmer;
 $deets = $farmer->fetch_farmer_details($_SESSION['farmeronline']);
 $products=$farmer->fetch_farmer_product($_SESSION['farmeronline']);
@@ -12,8 +12,8 @@ $products=$farmer->fetch_farmer_product($_SESSION['farmeronline']);
 // print_r($products);
 // echo"</pre>";
 
-require_once"partials/header.php";
-require_once"partials/dash.php";
+require_once"Partials/header.php";
+require_once"Partials/dash.php";
 
 $category = $farmer->fetch_category();
 $product = $farmer->fetch_all_product();
@@ -173,4 +173,4 @@ $product = $farmer->fetch_all_product();
 
     });
 </script>
-<?php require_once"partials/footer.php";?>
+<?php require_once"Partials/footer.php";?>
