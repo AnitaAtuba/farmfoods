@@ -1,13 +1,13 @@
 <?php 
 	session_start();
-	require_once"classes/Farmer.php";
+	require_once"Classes/Farmer.php";
 
 	$farmer= new Farmer;
 
 	$farmeronline = isset($_SESSION['farmeronline'])? $_SESSION['farmeronline']:"";
 
 	$deets = $farmer->fetch_farmer_details($farmeronline);
-	require_once"partials/header.php";
+	require_once"Partials/header.php";
 
 	$products =$farmer->fetch_some_product();
 	$farmers= $farmer->fetch_farmers();
@@ -154,7 +154,7 @@
 										<br>
 										<br>
 										<br>
-<?php require_once"partials/footer.php"?>										
+<?php require_once"Partials/footer.php"?>										
 
 												
 	

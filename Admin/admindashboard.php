@@ -1,6 +1,6 @@
 
 <?php 
-require_once"partials/header.php";
+require_once"Partials/header.php";
 require_once"adminguard.php";
 
 

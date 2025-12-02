@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require_once"partials/header.php"?>
+require_once"Partials/header.php"?>
 
 			<!--CONTAINER -->
 <div class="container-fluid bg-white">
@@ -109,4 +109,4 @@ require_once"partials/header.php"?>
 
 		
 			</div>
-<?php require_once"partials/footer.php";?>
+<?php require_once"Partials/footer.php";?>

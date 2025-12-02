@@ -1,7 +1,7 @@
 <?php 
     session_start();
-	// require_once"partials/header.php";
-	 require_once"classes/Admin.php";
+	// require_once"Partials/header.php";
+	 require_once"Classes/Admin.php";
 
 ?>
 

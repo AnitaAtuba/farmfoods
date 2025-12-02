@@ -1,14 +1,14 @@
 <?php 
 session_start();
 require_once"userguard.php";
-require_once"classes/Farmer.php";
+require_once"Classes/Farmer.php";
 
 	$farmer= new Farmer;
 	$deets = $farmer->fetch_farmer_details($_SESSION['farmeronline']);
 
 
-require_once"partials/header.php";
-require_once"partials/dash.php";
+require_once"Partials/header.php";
+require_once"Partials/dash.php";
 $total_orders = $farmer->total_orders($_SESSION['farmeronline']);
 $order_detail= $farmer->orders_details($_SESSION['farmeronline']);
 
@@ -87,5 +87,5 @@ $order_detail= $farmer->orders_details($_SESSION['farmeronline']);
 </div>
 
 <?php 
-require_once"partials/footer.php";
+require_once"Partials/footer.php";
 ?>

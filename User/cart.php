@@ -1,12 +1,12 @@
 <?php 
 session_start();
 require_once"userguard.php";
-require_once"classes/Buyer.php";
+require_once"Classes/Buyer.php";
 $buyer = new Buyer;
 $deets = $buyer->fetch_buyer_details($_SESSION['buyeronline']);
 $cart = $buyer->get_my_cart($_SESSION['buyeronline']);
-require_once"partials/header.php";
-require_once"partials/dash.php";
+require_once"Partials/header.php";
+require_once"Partials/dash.php";
 
 // echo"<pre>";
 // print_r($cart);
@@ -93,4 +93,4 @@ require_once"partials/dash.php";
 </div>
 </div>
 <?php 
-require_once "partials/footer.php";?>
+require_once "Partials/footer.php";?>

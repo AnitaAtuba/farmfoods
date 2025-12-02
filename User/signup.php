@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require_once"partials/header.php"?>
+require_once"Partials/header.php"?>
 	<title>BuyFarm | sign up</title>
 <style>
 
@@ -167,4 +167,4 @@ i agree with Terms and Conditions and Privacy Policy
 
 		
 			</div>
-<?php require_once"partials/footer.php";?>
+<?php require_once"Partials/footer.php";?>

@@ -1,7 +1,7 @@
 <?php 
 session_start();
 require_once"userguard.php";
-require_once"classes/Farmer.php";
+require_once"Classes/Farmer.php";
 
 $farmer = new Farmer;
 $deets = $farmer->fetch_farmer_details($_SESSION['farmeronline']);
@@ -11,8 +11,8 @@ $states=$farmer->fetch_states();
 // echo"<pre>";
 // print_r($deets);
 // echo"</pre>";
-require_once"partials/header.php";
-require_once"partials/dash.php";
+require_once"Partials/header.php";
+require_once"Partials/dash.php";
 
 ?>
 
@@ -134,7 +134,7 @@ require_once"partials/dash.php";
 </section>
 </div>
 <?php 
-	require_once"partials/footer.php";
+	require_once"Partials/footer.php";
 ?>
 <script src="Assets/jquery.js"></script>
 <script>

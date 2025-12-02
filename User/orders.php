@@ -1,14 +1,14 @@
 <?php 
 session_start();
 require_once"userguard.php";
-require_once"classes/Buyer.php";
+require_once"Classes/Buyer.php";
 
 	$buyer= new Buyer;
 	$deets = $buyer->fetch_buyer_details($_SESSION['buyeronline']);
 
 
-require_once"partials/header.php";
-require_once"partials/dash.php";
+require_once"Partials/header.php";
+require_once"Partials/dash.php";
 $total_orders = $buyer->total_orders($_SESSION['buyeronline']);
 // $order_details= $buyer-> total_orders_details($_SESSION['buyeronline']);
 
@@ -73,5 +73,5 @@ $total_orders = $buyer->total_orders($_SESSION['buyeronline']);
 </div>
 
 <?php 
-require_once"partials/footer.php";
+require_once"Partials/footer.php";
 ?>
