@@ -9,10 +9,10 @@
 	<meta name="robots" content="index, follow"/>
 	<meta name="author" content="Anita oseze Atuba"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="Assets/Css/styles.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/fontawesome/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="Assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Assets/fontawesome/fontawesome/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
 
 	<title>FarmFoods</title>

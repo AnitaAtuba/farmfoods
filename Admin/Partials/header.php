@@ -24,8 +24,8 @@ $deets = $admin->fetch_admin_details($_SESSION['adminonline']);
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/fontawesome/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="Assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Assets/fontawesome/fontawesome/css/all.min.css">
 	<title>FarmFoods | Admin</title>
 <style>
 		*{
