@@ -98,7 +98,7 @@ session_start();
           </div>
         </form>
         <div class="mb-3">
-         <span>Not a Farmer? <a href="../User/login.php">click me to buy FarmFoods.</a></span>
+         <span>Not a Farmer? <a href="../user/login.php">click me to buy FarmFoods.</a></span>
         </div>
       </div>
       <hr />

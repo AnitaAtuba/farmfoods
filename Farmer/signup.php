@@ -94,7 +94,7 @@ require_once"Partials/header.php"?>
 			<button name="btn" class="button btn btn-success col-12 ">Sign up</button>
 			</div>
 			<div class="col-auto mb-3">
-			<span>Want to buy FarmFoods sign up ? <a href="../User/signup.php">click me to Sign up</a></span>
+			<span>Want to buy FarmFoods sign up ? <a href="../user/signup.php">click me to Sign up</a></span>
 			</div>
 	
 		</form>
@@ -105,7 +105,7 @@ require_once"Partials/header.php"?>
 				<hr>
 				<br>
 				<br>
-					</div>
+				</div>
 
 		
 			</div>
