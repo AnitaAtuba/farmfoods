@@ -14,7 +14,7 @@ if(isset($_POST['btn'])){
         $user = $_POST['radio']? $_POST['radio']:"";
 
          if($user == "farmer"){
-                header("location:../../farmer/login.php");
+                header("location:../../Farmer/login.php");
                 exit;
             }
 

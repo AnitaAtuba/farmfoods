@@ -17,11 +17,11 @@ if(isset($_POST['btn'])){
         $user = $_POST['radio']? $_POST['radio']:"";
 
                  if($user == "farmer"){
-                header("location:../../farmer/signup.php");
+                header("location:../../Farmer/signup.php");
                 exit;
             }
 
-// require_once"../../Farmer/process/process_signup.php";
+
             if(empty($fname) || empty($lname) || empty($email) || empty($pass1) || empty($user)){
                 $_SESSION['buyererror'] = "All fields are required.";
                 header("location:../signup.php");
