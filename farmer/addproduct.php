@@ -105,7 +105,7 @@ $products = $farmer->fetch_all_product();
     </div>
 
     <?php require_once "Partials/footer.php";?>
-<script src="Assets/jquery.js"></script>
+<script src="assets/jquery.js"></script>
     <script>
     $(function(){
 		

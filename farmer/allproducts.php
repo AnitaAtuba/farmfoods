@@ -150,7 +150,7 @@ $product = $farmer->fetch_all_product();
  </div>
 
 		
-		<script src="Assets/jquery.js"></script>
+		<script src="assets/jquery.js"></script>
     <script>
     $(function(){
 		
