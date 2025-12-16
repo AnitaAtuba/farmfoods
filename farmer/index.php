@@ -39,7 +39,7 @@
 
 <div class="row">
 	<div class="col" align="">
-			<a href="signup.php" type="button" class="home-btn py-2 text-center col-8 offset-2">Join FarmFoods</a>
+			<a href="signup.php" type="button" class="home-btn py-2 text-center col-sm-8 col-md-8 offset-sm-2 offset-md-2">Join FarmFoods</a>
 		</div>
 		</div>
 </div>

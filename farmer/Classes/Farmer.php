@@ -134,7 +134,6 @@ class Farmer extends Db
                 return $res;
         }catch(PDOException $e){
                                die($e->getMessage());
-
                 return false;
          }
        }
