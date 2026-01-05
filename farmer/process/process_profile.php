@@ -63,7 +63,11 @@ echo"</pre>";
             }
            
         $dp_name = "Bf"."_".time()."_".$filename;
-         try{
+         echo"<pre>";
+        print_r($dp_name);
+        echo"</pre>";
+        die();
+        try{
              $res = move_uploaded_file($tmp,"../assets/uploads/$dp_name");
                
         }catch(PDOException $e){
@@ -85,7 +89,7 @@ echo"</pre>";
                             } 
 
            }else{
-                $_SESSION['farmerror'] = "Could not upload picture try again n";
+                $_SESSION['farmerror'] = "Could not upload picture try again";
                  header("location:../profile.php");
                  exit;
            }  
