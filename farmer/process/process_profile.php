@@ -66,7 +66,7 @@ require_once"../Classes/utility.php";
         try{
              $res = move_uploaded_file($tmp,"../assets/uploads/$dp_name");
                echo"<pre>";
-                print_r($dp_name);
+                var_dump($res);
                 echo"</pre>";
                 die(); 
         }catch(PDOException $e){
