@@ -12,7 +12,7 @@ echo"</pre>";
 echo"<pre>";
 print_r($_FILES);
 echo"</pre>";
-//  die;
+
     if(isset($_POST['subbtn'])){
 
             $userid = $_SESSION['farmeronline'];
@@ -63,10 +63,16 @@ echo"</pre>";
             }
            
         $dp_name = "Bf"."_".time()."_".$filename;
-        $res = move_uploaded_file($tmp,"../assets/uploads/$dp_name");
+         try{
+             $res = move_uploaded_file($tmp,"../assets/uploads/$dp_name");
+               
+        }catch(PDOException $e){
+                 die($e->getMessage());
+                return false;
+        }
           if($res){
                 $farmer =  new Farmer;
-                $profile= $farmer->update_profile($dob,$phone,$lga,$state,$addr1,$addr2,$dp_name,$userid);
+                $profile = $farmer->update_profile($dob,$phone,$lga,$state,$addr1,$addr2,$dp_name,$userid);
                 
                     if($profile){
                             $_SESSION['farmmessage'] = "Account Successfully updated";
