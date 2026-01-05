@@ -139,15 +139,16 @@ class Farmer extends Db
        }
     
               public function add_product($name,$price,$image,$category,$detail,$userid){
-                var_dump($name,$price,$image,$category,$detail,$userid);
-                die();
          try{
                 $sql = "INSERT INTO product (product_name,prod_price,product_image,prod_categoryid,product_detail,product_userid) VALUES (?,?,?,?,?,?)";
                 $stmt = $this->conn->prepare($sql);
                $res= $stmt->execute([$name,$price,$image,$category,$detail,$userid]);
+               var_dump($res);
+                die();
+
                 return $res;
         }catch(PDOException $e){
-                               die($e->getMessage());
+                die($e->getMessage());
                 return false;
          }
        }
