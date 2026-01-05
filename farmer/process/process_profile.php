@@ -5,13 +5,13 @@ require_once"../Classes/utility.php";
 
 // $dob,$phone,$state,$addr1,$addr2,$dp_name
 
-echo"<pre>";
-print_r($_POST);
-echo"</pre>";
+// echo"<pre>";
+// print_r($_POST);
+// echo"</pre>";
 
-echo"<pre>";
-print_r($_FILES);
-echo"</pre>";
+// echo"<pre>";
+// print_r($_FILES);
+// echo"</pre>";
 
     if(isset($_POST['subbtn'])){
 
