@@ -85,7 +85,7 @@ echo"</pre>";
                             } 
 
            }else{
-                $_SESSION['farmerror'] = "Could not upload picture try again";
+                $_SESSION['farmerror'] = "Could not upload picture try again n";
                  header("location:../profile.php");
                  exit;
            }  
