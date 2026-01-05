@@ -1,11 +1,9 @@
 <?php 
 session_start();
 require_once"../userguard.php";
-require_once"../classes/Farmer.php";
+require_once"../Classes/Farmer.php";
 require_once"../Classes/utility.php";
 $farmer = new Farmer;
-
-
 
 
 // echo"<pre>";
@@ -26,8 +24,6 @@ if(isset($_POST['addbtn'])){
             $detail =sanitize( $_POST['detail']);
             $data = $farmer->fetch_product_by_id($product_id);
             $name = $data['product_name'];
-
- 
 
 
             $filename = $_FILES['image']['name'];
