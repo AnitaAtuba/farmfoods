@@ -65,10 +65,10 @@ require_once"../Classes/utility.php";
         
         try{
              $res = move_uploaded_file($tmp,"../assets/uploads/$dp_name");
-               echo"<pre>";
-                var_dump($res);
-                echo"</pre>";
-                die(); 
+            //    echo"<pre>";
+            //     var_dump($res);
+            //     echo"</pre>";
+            //     die(); 
         }catch(PDOException $e){
                  die($e->getMessage());
                 return false;
