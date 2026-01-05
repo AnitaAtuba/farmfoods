@@ -63,13 +63,13 @@ echo"</pre>";
             }
            
         $dp_name = "Bf"."_".time()."_".$filename;
-         echo"<pre>";
-        print_r($dp_name);
-        echo"</pre>";
-        die();
+        
         try{
              $res = move_uploaded_file($tmp,"../assets/uploads/$dp_name");
-               
+               echo"<pre>";
+                print_r($res);
+                echo"</pre>";
+                die(); 
         }catch(PDOException $e){
                  die($e->getMessage());
                 return false;
