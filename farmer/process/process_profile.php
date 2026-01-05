@@ -3,7 +3,6 @@ session_start();
 require_once"../Classes/Farmer.php";
 require_once"../Classes/utility.php";
 
-// $dob,$phone,$state,$addr1,$addr2,$dp_name
 
 // echo"<pre>";
 // print_r($_POST);
@@ -67,7 +66,7 @@ require_once"../Classes/utility.php";
         try{
              $res = move_uploaded_file($tmp,"../assets/uploads/$dp_name");
                echo"<pre>";
-                print_r($res);
+                print_r($dp_name);
                 echo"</pre>";
                 die(); 
         }catch(PDOException $e){
