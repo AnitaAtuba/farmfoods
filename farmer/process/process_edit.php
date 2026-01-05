@@ -2,11 +2,9 @@
 
 session_start();
 require_once"../userguard.php";
-require_once"../classes/Farmer.php";
+require_once"../Classes/Farmer.php";
 require_once"../Classes/utility.php";
  $farmer =  new Farmer;
-
-//    die("hi");      
 
 
 

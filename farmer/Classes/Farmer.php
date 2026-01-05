@@ -143,8 +143,6 @@ class Farmer extends Db
                 $sql = "INSERT INTO product (product_name,prod_price,product_image,prod_categoryid,product_detail,product_userid) VALUES (?,?,?,?,?,?)";
                 $stmt = $this->conn->prepare($sql);
                $res= $stmt->execute([$name,$price,$image,$category,$detail,$userid]);
-        //        var_dump($res);
-        //         die();
 
                 return $res;
         }catch(PDOException $e){
@@ -158,9 +156,11 @@ class Farmer extends Db
                 $sql = "UPDATE `product` SET product_name=?,prod_price=?,prod_categoryid=?,product_detail=?,product_userid=? WHERE prod_id=?";
                 $stmt = $this->conn->prepare($sql);
                $res= $stmt->execute([$name,$price,$category,$detail,$userid,$prod_id]);
+               var_dump($res);
+               die();
                 return $res;
         }catch(PDOException $e){
-                // $e->getMessage(); die();
+                die( $e->getMessage());
                 return false;
          }
        }
